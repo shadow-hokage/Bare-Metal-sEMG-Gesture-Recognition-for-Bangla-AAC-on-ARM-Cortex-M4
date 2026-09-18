@@ -1,0 +1,1 @@
+# Bare-Metal-sEMG-Gesture-Recognition-for-Bangla-AAC-on-ARM-Cortex-M4
