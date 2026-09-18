@@ -15,9 +15,9 @@
  */
 
 /* ---- Blynk credentials: paste from Blynk Console (must precede includes) ---- */
-#define BLYNK_TEMPLATE_ID   "TMPL6zXjUvZad"
+#define BLYNK_TEMPLATE_ID   "***" 
 #define BLYNK_TEMPLATE_NAME "AAC Node"
-#define BLYNK_AUTH_TOKEN    "OYs9NLtlcjpXefOCphwAQg3j-A3eU2zz"
+#define BLYNK_AUTH_TOKEN    "***" 
 #define BLYNK_PRINT Serial
 
 #include <WiFi.h>
@@ -28,8 +28,8 @@
 #include "phrases.h"
 
 /* ---- WiFi (2.4 GHz, WPA2-Personal, e.g. phone hotspot) ---- */
-static const char WIFI_SSID[] = "aac";
-static const char WIFI_PASS[] = "12345678";
+static const char WIFI_SSID[] = "***"; // assign accordingly
+static const char WIFI_PASS[] = "***"; // assign accordingly
 
 #define TFT_CS   5
 #define TFT_DC   2
@@ -60,7 +60,7 @@ static QueueHandle_t cloudQ;
 static void buildPalette(void)
 {
   for (int n = 0; n < 16; n++) {
-    uint8_t v = n * 17;               /* 0 -> black bg, 15 -> white ink */
+    uint8_t v = n * 17;               
     palette[n] = ((v >> 3) << 11) | ((v >> 2) << 5) | (v >> 3);
   }
 }
